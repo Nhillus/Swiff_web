@@ -203,7 +203,7 @@
             <div class="col s12 m12 l12">
                 <h1 class="center-align">WIE ENTSTEHT EN  SwiffLAD?</h1>
                 <div class="col s3 m3 l3">
-
+                    <img src="" alt="">
                 </div>
 
                 <div class="col s3 m3 l3">
