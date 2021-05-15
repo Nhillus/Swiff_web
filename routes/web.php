@@ -13,6 +13,21 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('welcome', function () {
     return view('welcome');
+});
+
+Route::get('parallax', function(){
+    return view('parallax');
+
+});
+
+Route::get('parallaxMD', function(){
+    return view('parallaxmaterial');
+
+});
+
+Route::get('/', function(){
+    return view('home');
+
 });
