@@ -39,3 +39,7 @@ Route::get('registro', function(){
     return view('registro');
 
 });
+Route::get('leads', function(){
+    return view('leads');
+
+});

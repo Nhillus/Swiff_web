@@ -851,7 +851,7 @@
                     <div class="col s12">
                         <div class="center-align button_container_registro">
                             <a class="button_registro  waves-effect waves-light btn">
-                            JETZT GRATIS & UNVERBINDLICH REGIESTRIEREN! 
+                                JETZT GRATIS & UNVERBINDLICH REGIESTRIEREN! 
                             </a>
                         </div>
                     </div>
