@@ -47,3 +47,7 @@ Route::get('cita', function(){
     return view('cita');
 
 });
+Route::get('contacto', function(){
+    return view('contacto');
+
+});
