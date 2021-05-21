@@ -43,3 +43,7 @@ Route::get('leads', function(){
     return view('leads');
 
 });
+Route::get('cita', function(){
+    return view('cita');
+
+});
