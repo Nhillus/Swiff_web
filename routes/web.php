@@ -51,3 +51,7 @@ Route::get('contacto', function(){
     return view('contacto');
 
 });
+Route::get('impressum', function(){
+    return view('impressum');
+
+});
