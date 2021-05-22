@@ -55,3 +55,7 @@ Route::get('impressum', function(){
     return view('impressum');
 
 });
+Route::get('AGB', function(){
+    return view('AGB');
+
+});
