@@ -40,7 +40,7 @@
         max-width: 1200px;
         background-color:white; 
         box-shadow: 0 1px 9px rgb(0 0 0 / 8%);
-        height: 1150px;
+        height: 1300px;
     }
     .container {
         width: 80% !important;
@@ -490,14 +490,29 @@
         margin-bottom: 0px!important;
         padding:0px 10px;
     }
-    .button_sex {
+    .button_sex_herr {
+        border-radius: 10px;
         background-color: #fc6773;
+        margin-right: 10px
+    }
+    .button_sex_Frau {
+        color: #dbccb2;
+        border-radius: 10px;
+        background-color: #fffbdb;
+        margin-left: 10px
     }
     .container_buttons {
-        margin-top: 20px;
+        margin-top: 5px;
+        margin-left: 40px;
     }
     .container_kontak {
-        background-color: #fcebce;
+        background-color: #fcebcd;
+        margin: 40px 0px 40px 70px ;
+    }
+    .contacto_text {
+        position: relative;
+        left: 20px;
+        margin: 40px;
     }
     .iva {
         position: relative;
@@ -541,29 +556,28 @@
         </div>
         <div class="row">
             <div class="col s12 m8 l8">
-                <p>
+                <p class="contacto_text">
                     Bitte füllen Sie unser Kontaktformular aus und wir werden uns umgehend bei lhnen melden. Um die Kontaktaufnahme sicherzutellen, bitten wir Sie alle Angeben korrekt und komplett auszufüllen. Je nach Auslastung wird die Kontaktaufnahme innerhalb wenigen Stunden erfolgen. Herzlichen Dank!
                 </p>
-                <p>Sie können uns auch direkt über die Emailadresse info(at)krakenkassenversicherung.ch anschreiben.
+                <p class="contacto_text"> Sie können uns auch direkt über die Emailadresse info(at)krakenkassenversicherung.ch anschreiben.
                     Vergessen Sie nicht lhre Telefonnummer anzugeben, damit wir uns umgehend bei lhnen melden können.
                 </p>
                 <div class="row">
                     <div class="container_kontak">
                         <div class="row">
                             <div class="col s12 container_buttons">
-                                <div class="container">
-                                    <a class="button_sex waves-effect waves-light btn">Herr</a>
-                                    <a class="button_sex waves-effect waves-light btn">Frau</a>
+                                <div class="container_buttons">
+                                    <a class="button_sex_herr waves-effect waves-light btn">Herr</a>
+                                    <a class="button_sex_Frau waves-effect waves-light btn">Frau</a>
                                 </div>
-                                <div class=" container">
                                     <div class="col s12 m6 l6">
-                                        <div id="container_email" class="row">
+                                        <div id="container_email container" class="row">
                                             <div class="inputs input-field col s12">
                                                 <input placeholder="vorname" id="nombre" type="text" class="inputs black-text validate">
                                                 <label for="nombre"></label>
                                             </div>
                                         </div>
-                                        <div id="container_email" class="row">
+                                        <div id="container_email container" class="row">
                                             <div class="inputs input-field col s8">
                                                 <input placeholder="Strasse" id="Camino" type="text" class="inputs black-text validate">
                                                 <label for="Camino"></label>
@@ -573,13 +587,13 @@
                                                 <label for="Camino"></label>
                                             </div>
                                         </div>
-                                        <div id="container_email" class="row">
+                                        <div id="container_email container" class="row">
                                             <div class="inputs input-field col s12">
                                                 <input placeholder="Telefon" id="telefono" type="text" class="inputs black-text validate">
                                                 <label for="telefono"></label>
                                             </div>
                                         </div>
-                                        <div id="container_email" class="row">
+                                        <div id="container_email container" class="row">
                                             <div class="inputs input-field col s12">
                                                 <input placeholder="Geburtstag" id="email" type="text" class="inputs black-text validate">
                                                 <label for="email"></label>
@@ -587,13 +601,13 @@
                                         </div>
                                     </div>
                                     <div class="col s12 m6 l6">
-                                        <div id="container_email" class="row">
+                                        <div id="container_email container" class="row">
                                             <div class="inputs input-field col s12">
                                                 <input placeholder="Nachname" id="nombre" type="text" class="inputs black-text validate">
                                                 <label for="nombre"></label>
                                             </div>
                                         </div>
-                                        <div id="container_email" class="row">
+                                        <div id="container_email container" class="row">
                                             <div class="inputs input-field col s4">
                                                 <input placeholder="PLZ" id="Camino" type="text" class="inputs black-text validate">
                                                 <label for="Camino"></label>
@@ -603,20 +617,19 @@
                                                 <label for="Camino"></label>
                                             </div>
                                         </div>
-                                        <div id="container_email" class="row">
+                                        <div id="container_email container" class="row">
                                             <div class="inputs input-field col s12">
                                                 <input placeholder="Ort" id="Código postal" type="text" class="inputs black-text validate">
                                                 <label for="Código postal"></label>
                                             </div>
                                         </div>
-                                        <div id="container_email" class="row">
+                                        <div id="container_email container" class="row">
                                             <div class="inputs input-field col s12">
                                                 <input placeholder="Auktuelle Krankenkasse" id="email" type="text" class="inputs black-text validate">
                                                 <label for="email"></label>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
                             </div>
                         </div>
                         <div id="container_email" class="row">
