@@ -53,7 +53,7 @@
         margin: 50px 50px;
     }
     .texto_clausulas {
-        margin: 25px 50px;
+        margin: 15px 50px;
     }
     .footer {
         height: 60px;
@@ -344,7 +344,7 @@
                     <p>5.4.3 Der Sitz des Schiedsverfahrens ist Zürich Schweiz;</p>
                 </div>
                 <div class="texto_clausulas">
-                    <p>5.4.4Die Sprache des Schiedsverfahrens ist Deutsch.</p>
+                    <p>5.4.4 Die Sprache des Schiedsverfahrens ist Deutsch.</p>
                 </div>
                 <div class="texto_clausulas">
                     <p>5.4.5 Es findet das Beschleunigte Verfahren Anwendung, und der Streitfall wird nur auf der Grundlage von Urkundenbeweisen entschieden.</p>
