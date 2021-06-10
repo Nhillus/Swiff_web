@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- Icons of materialize-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Home</title>
 </head>
 <style>
@@ -36,17 +38,34 @@
         background-color: #edf2f5;
     }
     .grid {
+        position: relative;
         margin: 0 auto;
         max-width: 1200px;
         background-color:white; 
         box-shadow: 0 1px 9px rgb(0 0 0 / 8%);
+        overflow: hidden;
     }
     .container {
         width: 80% !important;
     }
     .box-red {
-        height: 580px;
+        background-color: #fd002f;
+        height: 600px;
+    }
+    .container_input {
         margin: 0px 25px;
+        background-color: #fd002f;
+        height: fit-content;
+        padding-bottom: 570px;
+    }
+
+    .container_container_button {
+        background-color:  #fd002f;
+    }
+    .container_izq_inputs {
+        background-color: #fd002f;
+    }
+    .container_der_inputs {
         background-color: #fd002f;
     }
     .container_h2_text {
@@ -68,15 +87,12 @@
         width:350px
     }
 
-    .container_h2_login {
+    .Premios {
         padding:0px 40px;
     }
-
     .container_p_login {
         padding: 0px 40px;
     }
-
-
 
     #container_email {
         margin-bottom: 0px!important;
@@ -99,6 +115,10 @@
         border-radius: 10px; /* CSS3 */
         margin-top: 10px !important;
         margin-bottom: 0px !important;
+    }
+    .contenedor_SwiffLAD {
+        background-color: #ebdabe;
+        margin: 30px 35px;
     }
 
     .input-field input[type=password] {
@@ -133,9 +153,7 @@
      color: #000;
      
    }
-   .button_compare_register {
-
-   }
+   
    .button_compare {
        color:#fffcdc;
        background-color: #9065b8;
@@ -157,22 +175,23 @@
        color: #fffddd;
        font-size: 11px;
    }
-   .contenedor_SwiffLAD {
+   .Comparacion_seguros_medicos_container {
        position: relative;
        top: 30px;
-       height: 550px;
+       height: fit-content;
        margin: 0px 35px;
+       padding-bottom: 30px;
        background-color: #ebdabe;
    }
-   .container_item_SwiffLAD {
+   .Comparacion_seguros_medicos_item {
        height: 370px;
        border-right: 3px solid grey;
    }
 
-   .img_container {
+   .Comparacion_seguros_medico_img_container {
        text-align: center;
    }
-   .text_container {
+   .Comparacion_seguros_medicos_item_text {
        text-align:left;
    }
 
@@ -287,10 +306,6 @@
         bottom: 15px;
         color: #fd002e;
     }
-    .container_tipo_seguros {
-
-    }
-
     .linea_gris {
         border-bottom: 2px solid grey;
     }
@@ -303,7 +318,7 @@
         position:relative;
         top:12px;
         margin: 0px 25px;
-        height: 680px;
+        height: 730px;
         background-color: #fcebce
     }
 
@@ -312,11 +327,10 @@
     }
 
     .linea_punteada {
-        border-bottom: 3px solid black;
-        border-style:dashed;
+        border-bottom: 3px dashed black;
     }
     .container_ahorro {
-        margin: 70px 0px 50px 0px;
+        margin: 70px 30px 50px 30px;
     }
     .ahorro_text {
         color: #ec0019;
@@ -334,7 +348,15 @@
         font-size: 18px;
         padding-top:15px;
     }
-
+    .precio_swifflead {
+        background-color: #fd3957;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: stretch;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
     .contenedor_servicios {
         margin:0px 25px;
     }
@@ -376,7 +398,6 @@
 
     .small_box_blue {
         background-color: #5d69c9;
-        margin: 0px 12px 0px 10px;;
         
     }
     .small_box_pink {
@@ -385,22 +406,20 @@
         height: 250px;
     }
     .containers_container_pink {
-        position: relative;
-        bottom: 35px;
+        padding-bottom: 25px;
     }
-    .container_pink_up {
-        
-    }
-    .container_pink_down {
     
- 
-    }
+    
+    .img_container_jetzt {
+        text-align: center;
+    } 
     .box_blue_ligth {
         background-color: #80d0cd;
     }
     .box_grey_ligth {
         background-color: #ebdabe;
         padding-bottom: 25px;
+        margin :10px 10px;
     }
     .img_incorrecto {
         width: 40px;
@@ -411,7 +430,25 @@
         position: relative;
         bottom: 10px;
     }
+    .img_incorrecto_leads {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+        margin-top: 3px;
+        float: left;
+        position: relative;
+        bottom: 10px;
+    }
     .img_correcto {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+        margin-top: 3px;
+        float: left;
+        position: relative;
+        bottom: 10px;
+    }
+    .img_correcto_leads {
         width: 40px;
         height: 40px;
         margin-right: 10px;
@@ -432,11 +469,10 @@
     .small_box_pink_klassiche_lead {
         background-color: #fd3957;
         margin: 0px 10px;
-        height: 385px;
+        height: fit-content;
     }
     .small_box_white {
-        position: relative;
-        bottom: 40px;
+        display: flex;
         background-color: white;
         width: 100%;
     }
@@ -444,18 +480,29 @@
         text-decoration:line-through;
         font-size: 16px;
     }
+
+    .precio_leads_text {
+        background-color: #fd3957;
+        text-align: left;
+    }
+    .contenedor_iva {
+
+    }
     .flotar_derecha {
-        display: flex;
-        float: right;
         position: relative;
-        padding-left: 5px;
-        top: 10px;
+        left:20px;
+    }
+    .flotar_derecha_iva {
+        position: relative;
+        left:20px;
+    }
+    .precio_leads {
+        text-align: left;
     }
      .small_box_pink_paket {
         background-color: #fd3957;
-        position:relative;
-        bottom: 28px;
     }
+
     .container_large_paket {
         width: 85%;
         margin-right: 20px;
@@ -466,12 +513,22 @@
     }
     .containers_large_paket {
         position: relative;
-        bottom: 40px;
     }
     .container_large_paket_text {
         display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: stretch;
+        justify-content: flex-start;
+        align-items: center;
     }
-
+    .precio_lead {
+        position:relative;
+    }
+    .sin_iva {
+        position: absolute;
+        right: 0px;
+    }
     .iva {
         position: relative;
         right: 90px;
@@ -483,6 +540,563 @@
     .footer_text {
         padding-top:10px;
         font-size: 26px;
+    } 
+    /* Media Queries */
+    /*Diferencia entre 247px en un sml6*/
+    /*Diferencia entre 28px en un sml3*/
+    @media only screen and (max-width: 1132px)
+    {
+        /*Equivale a 850 width*/
+        
+        .Comparacion_seguros_medicos_container
+        {
+            height: 600px;
+        }
+        .Comparacion_seguros_medicos_item {
+            height: 470px;
+        }
+        .container_button_precios_text {
+            font-size: 12px;
+         }
+    }
+    @media only screen and (max-width: 1025px)
+    {
+        
+        .container_tipo_seguros_tittles {
+            font-size: 24px;
+        }
+        .box_ligth_pink {
+            height: 780px;
+        }
+    }
+    @media only screen and (max-width: 1000px)
+    {
+        .box_ligth_pink {
+            height: 800px;
+        }
+    }
+    @media only screen and (max-width: 995px)
+    {
+        .box_ligth_pink {
+            height: 860px;
+        }
+        .container_button_precios_text {
+            font-size: 9px;
+         }
+        .button_container_registro {
+            height: 30px;
+        }
+        
+    }
+    @media only screen and (max-width: 990px)
+    {
+        .box_ligth_pink {
+            height: 720px;
+        }
+        .button_registro {
+            font-size: 9px;
+        }
+    }
+    @media only screen and (max-width : 987px) {
+       
+        #container_email {
+            padding: 0px 0px;
+        }
+        .asesoriamiento_tittle {
+            font-size: 34px;
+        }
+        .asesoriamiento_text {
+            font-size:21px;
+        }
+        .box_ligth_pink {
+            height: 700px;
+        }
+        .button_registro {
+            font-size: 8px;
+        }
+        
+    }
+    @media only screen and (max-width : 950px) {
+        .box_ligth_pink {
+            height: 760px;
+        }
+        .container_button_precios_text {
+            font-size: 7px;
+         }
+        .classic_leads {
+            font-size: 26px;
+        }
+        .swifflead {
+            font-size: 26px;
+        }
+        .classic_leads_text {
+            font-size: 16px;
+        }
+        .small_box_pink {
+            height: fit-content;
+            padding-bottom: 15px;
+        }
+        .swifflead_text {
+            font-size: 16px;
+        }
+        .img_incorrecto_leads {
+            width: 20px;
+            height: 20px;
+        }
+        .img_correcto_leads {
+            width: 20px;
+            height: 20px;
+            position: relative;
+            top: 2px;
+        }
+        .paquete_standart {
+            font-size: 20px;
+        }
+        .classic_leads_precio {
+            font-size: 20px;
+        }
+       
+    }
+
+    @media only screen and (max-width : 900px) {
+        
+        .asesoriamiento_tittle {
+            font-size: 28px;
+        }
+        .asesoriamiento_text {
+            font-size:18px;
+        }
+        .box_ligth_pink {
+            height: 640px;
+        }
+        .box_red_large_text {
+            font-size: 24px;
+        }
+        .SWIFFLEAD_tittle {
+            font-size: 40px;
+        }
+        .SWIFFLEAD_text {
+            font-size:12.8px;
+        }
+
+        .box-red {
+            height: 450px;
+        }
+        
+        .container_que_es_SWIFFLEAD {
+        }
+    }
+    @media only screen and (max-width : 890px) {
+        .ahorro_text {
+            font-size: 24px;
+        }
+       
+    }
+    @media only screen and (max-width : 870px) {
+        .SwiffLAD_tittle {
+            font-size: 32px;
+        }
+        .ahorro_text {
+            font-size: 18px;
+        }
+        .paquete_standart {
+            font-size: 20px;
+        }
+        .container_text_beneficios {
+            font-size: 18px;
+        }
+        .SWIFFLEAD_tittle {
+            font-size: 38px;
+        }
+        
+    }
+    @media only screen and (max-width : 859px) {
+        .SwiffLAD_tittle {
+            font-size: 32px;
+        }
+        .container_tipo_seguros_tittles {
+            font-size: 16px;
+        }
+        .asesoriamiento_tittle {
+            font-size: 24px;
+        }
+        .asesoriamiento_text {
+            font-size:17px;
+        }
+        .box_ligth_pink {
+            height: 670px;
+        }
+       
+    }
+    @media only screen and (max-width : 822px) {
+        
+        .input-field input[type=text] {
+            font-size: 11px;
+        }
+        .Premios_text_tittle {
+            font-size: 16px;
+        }
+        .asesoriamiento_tittle {
+            font-size: 18px;
+        }
+        .asesoriamiento_text {
+            font-size:16px;
+        }
+        .box_ligth_pink {
+            height: 620px;
+        }
+        .comparacion_pulpo_tittle {
+            font-size: 25px;
+        }
+         .SWIFFLEAD_tittle {
+            font-size: 36px;
+        }
+        
+    }
+    @media only screen and (max-width : 800px) {
+        
+        .Premios_text_tittle {
+            font-size: 14px;
+        }
+        .Premios_text {
+            font-size: 10px;
+        }
+        .box_ligth_pink {
+            height: 620px;
+        }
+        
+        .comparacion_pulpo_text {
+            font-size: 13px;
+        }
+
+        .SWIFFLEAD_tittle {
+            font-size: 34px;
+        }
+
+        .box-red {
+            height: 300px;
+        }
+       
+    }
+    @media only screen and (max-width : 790px) {
+        .Premios_text_tittle {
+            font-size: 12px;
+        }
+        .Premios_text {
+            font-size: 9px;
+        }
+        .Comparacion_seguros_medicos_tittle {
+            font-size: 57px;
+        }
+        .comparacion_item_text {
+            font-size: 11px;
+        }
+        .img_comparacion {
+            width: 250px !important;
+            height: 150px !important;
+        }
+        .Comparacion_seguro_titulos {
+            font-size: 14px;
+        }
+        .asesoriamiento_text {
+            font-size:14px;
+        }
+        .box_ligth_pink {
+            height: 510px;
+        }
+        .costos_comparacion_tittle {
+            font-size: 32px; 
+        }
+       .costos_comparacion_texto {
+           font-size:12px;
+           margin: 0px 35px;  
+       }
+       .SWIFFLEAD_tittle {
+            font-size: 24px;
+        }
+    }
+    @media only screen and (max-width : 780px) {
+        .box_ligth_pink {
+            height: 550px;
+        }
+        .SWIFFLEAD_tittle {
+            font-size: 22px;
+        }
+        
+    }
+    @media only screen and (max-width : 760px) {
+        .box_ligth_pink {
+            height: 580px;
+        }
+        .box_red_large_text {
+            font-size: 24px;
+        }
+        .SWIFFLEAD_tittle {
+            font-size: 20px;
+        }
+        
+    }
+    @media only screen and (max-width : 740px) {
+        .box_ligth_pink {
+            height: 600px;
+        }
+        .container_text_beneficios {
+            font-size: 16px;
+        }
+        
+    }
+    @media only screen and (max-width : 728px) {
+        .Comparacion_seguros_medicos_tittle {
+            font-size: 47px;
+        }
+        .asesoriamiento_text {
+            font-size:9px;
+        }
+        .box_ligth_pink {
+            height: 380px;
+        }
+        .container_p_login {
+            padding: 0px 20px;
+        }
+        .text_container {
+            font-size: 12px;
+        }
+        .button_registro {
+            font-size: 6px;
+        }
+        .box_red_large_text {
+            font-size: 22px;
+        }
+        
+    }
+
+    @media only screen and (max-width : 672px) {
+        .container_tipo_seguros_tittles {
+            font-size: 14px;
+        }
+        .container_tipo_seguros_tittle {
+            font-size: 42px;
+        }
+        .box_ligth_pink {
+            height: 380px;
+        }
+    }
+    @media only screen and (max-width : 650px) {
+        .box_ligth_pink {
+            height: 390px;
+        }
+        .SWIFFLEAD_tittle {
+            font-size: 18px;
+        }
+    }
+
+    @media only screen and (max-width : 600px) {
+        .Comparacion_seguros_medicos_container {
+            height: 1500px;
+        }
+        .box-red {
+            height: 1800px;
+            margin-bottom: 500px;
+        }
+        .servicios_adicionales {
+            font-size: 24px;
+        }
+        .Comparacion_seguros_medicos_tittle {
+            font-size: 37px;
+        }
+        .container_tipo_seguros_tittle {
+            font-size: 28px;
+        }
+        .container_tipo_seguros_tittles {
+            font-size: 26px;
+        }
+        .Comparacion_seguros_medicos_item {
+            border-right: 0px;
+            border-bottom: 3px solid grey;
+            margin-bottom: 10px;
+            height: 350px;
+        }
+        .container_button_precios_text {
+            font-size: 18px;
+        }
+        .button_registro {
+            font-size: 12px;
+        }
+        .button_precios {
+            width: 50%;
+        }
+        .Comparacion_seguro_titulos {
+            font-size: 18px;
+        }
+        .img_container {
+            position: relative;
+            left: 90px;
+        }
+        .img_container_2 {
+            position:relative;
+            left: 135px;
+        }
+        .img_container_3 {
+            position:relative;
+            left: 110px;
+        }
+        .img_container_4 {
+            position: relative;
+            left: 160px;
+        }
+        .comparacion_item_text {
+            font-size: 14px;
+        }
+        .SWIFFLEAD_tittle {
+            font-size: 32px;
+        }
+        .SWIFFLEAD_text {
+            font-size: 20px;
+        }
+        .input-field input[type=text] {
+            font-size:16px;
+        }
+        .Premios_text_tittle {
+            font-size: 26px;
+        }
+        .Premios_text {
+            font-size: 16px;
+        }
+        .box-red {
+            height: 480px;
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+        .box_ligth_pink {
+            height: fit-content;
+            padding-bottom: 10px;
+        }
+        .asesoriamiento_tittle {
+            font-size: 64px;
+        }
+        .asesoriamiento_text {
+            font-size:24px;
+        }
+        .ahorro_text {
+            font-size: 18px;
+        }
+        .box-red-large {
+            height: 780px;
+        }
+        .button_registro_ventajas {
+            font-size:8px;
+        }
+        .box_red_blood {
+            height: fit-content;
+        }
+        .comparacion_potencial { 
+            font-size: 26px;
+        }
+        .ventajas_comparacion {
+            font-size: 26px;
+        }
+        .Elegir_seguro_text {
+            font-size:11px;
+        }
+        .container_input {
+         margin-bottom: 20px;
+         padding-bottom: 1050px;
+        }
+        .container_que_es_SWIFFLEAD {
+            margin-bottom: -500px;
+        }
+        .costos_comparacion_texto {
+            text-align: center;
+        }
+    }
+    @media only screen and (max-width : 550px) {
+
+    .ahorro_text {
+            font-size: 16px;
+        }
+        .container_button_precios_text {
+            font-size: 14px;
+        }
+        .button_registro_ventajas {
+            font-size:8px;
+            width: 80%;
+        }
+    }
+    @media only screen and (max-width : 530px) {
+        .Comparacion_seguros_medicos_tittle {
+            font-size: 27px;
+        }
+        .Premios_text_tittle {
+            font-size: 24px;
+        }
+        .Premios_text {
+            font-size: 14px;
+        }
+        .asesoriamiento_tittle {
+            font-size: 32px;
+        }
+        .img_container {
+            position: relative;
+            left: 45px;
+        }
+        .img_container_2 {
+            position:relative;
+            left: 85px;
+        }
+        .img_container_3 {
+            position:relative;
+            left: 55px;
+        }
+        .img_container_4 {
+            position: relative;
+            left: 90px;
+        }
+        
+    }
+    @media only screen and (max-width : 515px) {
+        .img_container { 
+            position: relative;
+            left: 5px;
+        }
+        .img_container_2 {
+            position:relative;
+            left: 50px;
+        }
+        .img_container_3 {
+            position:relative;
+            left: 22px;
+        }
+        .img_container_4 {
+            position: relative;
+            left: 50px;
+        }
+    }
+    @media only screen and (max-width : 500px) {
+        .Comparacion_seguros_medicos_tittle {
+            font-size: 20px;
+        }
+        .Premios_text_tittle {
+            font-size: 18px;
+        }
+        .Premios_text {
+            font-size: 12px;
+        }
+        .img_container {
+            position: relative;
+            left: 5px;
+        }
+        .img_container_2 {
+            position:relative;
+            left: 15px;
+        }
+        .img_container_3 {
+            position:relative;
+            left: 22px;
+        }
+        .img_container_4 {
+            position: relative;
+            left: 20px;
+        }
     }
 </style>
 <body>
@@ -504,21 +1118,21 @@
             <div class="row">
                 <div class="col s12 m12 l12">
                     <div class="container">
-                        <h1 class="center-align">Krakenkassen-Vergleich</h1>
-                        <h5>Krakenkassenvergleich & kompetente Beratung vom Portal für unabhängige Versicherungsleistugen</h5>
+                        <h1 class="comparacion_pulpo_tittle center-align">Krakenkassen-Vergleich</h1>
+                        <h5 class="comparacion_pulpo_text center-align">Krakenkassenvergleich & kompetente Beratung vom Portal für unabhängige Versicherungsleistugen</h5>
                     </div>
                 </div>
                 <div class="col s12 m12 l12">
                     <div class="container">
-                        <p class="center-align">Die Wahl der richtigen Krankenkasse in der Schwiez gilt als eine der wichtigsten Aufgaben, da zahllose Faktoren im Hinblick auf das bestmögliche individuelle Angebot berücksichtigt werden müssen. Ob Arcosana AG, Auxilia, Agrisano, Intras, Sodalis, Sangate oder  Groupe Mutuel - ein Krankenkassenvergleich aller Leistungspakete sowie der finanziellen montalichen belastungen, die auf den  Versicherten zukommen werder, gilt als grungdlegend elementar für die Suche nach der richtigen Krankenkassen </p>
+                        <p class="Elegir_seguro_text center-align">Die Wahl der richtigen Krankenkasse in der Schwiez gilt als eine der wichtigsten Aufgaben, da zahllose Faktoren im Hinblick auf das bestmögliche individuelle Angebot berücksichtigt werden müssen. Ob Arcosana AG, Auxilia, Agrisano, Intras, Sodalis, Sangate oder  Groupe Mutuel - ein Krankenkassenvergleich aller Leistungspakete sowie der finanziellen montalichen belastungen, die auf den  Versicherten zukommen werder, gilt als grungdlegend elementar für die Suche nach der richtigen Krankenkassen </p>
                     </div>
                 </div>
             </div>
             <!--Caja roja con texto de registro -->
             <div class="row">
-                <div class="col s12 m8 l7">
-                    <div class="box-red">
-                        <div class="col s12 m6 l6">
+                <div class="col s12 m7 l7">
+                    <div class="container_input">
+                        <div class="col s12 m6 l6 container_izq_inputs">
                             <div id="container_email" class="row">
                                 <div class="input-field col s12">
                                     <input placeholder="Bereits versichert?" id="asegurado_pregunta" type="text" class="black-text validate">
@@ -556,7 +1170,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col s12 m6 l6">
+                        <!-- hasta aqui -->
+                        <div class="col s12 m6 l6 container_der_inputs">
                             <div id="container_email" class="row">
                                 <div class="input-field col s12">
                                     <input placeholder="Anzahl Personen" id="Numero_personas" type="text" class="black-text validate">
@@ -594,7 +1209,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col s12">
+                        <div class="col s12 container_container_button">
                             <div class="center-align button_container_register">
                                 <a class="button_compare waves-effect waves-light btn">Vergleichen sie Jetzt</a>
                             </div>
@@ -602,64 +1217,64 @@
                     </div>
                 </div>
                 <!-- Caja rosada con formulario login -->
-                <div class="col s12 m4 l5">
+                <div class="col s12 m5 l5">
                     <div class="box-pink">
-                        <div class="container_h2_login"><!-- -->
-                            <h4 class="left-align white-text">Krakenkassenprämien 2021</h2>
+                        <div class="Premios"><!-- -->
+                            <h4 class="Premios_text_tittle flow-text left-align white-text">Krakenkassenprämien 2021</h2>
                         </div>
                         <div class="container_p_login">
-                            <p class="left-align white-text">Prämie ab 179CHF pro Monat Erwachsene kinderprämie ab 60 CHF pro Monat Familienrabatt bis zu CHF 4`000 im Jahr!</p>
+                            <p class="Premios_text left-align white-text">Prämie ab 179CHF pro Monat Erwachsene kinderprämie ab 60 CHF pro Monat Familienrabatt bis zu CHF 4`000 im Jahr!</p>
                         </div>
                         <div class="row">
                             <div class="col s12 m12 l12">
-                                <div class="center-align container">
-                                   <img class="img_compartir" src="/img/compartir.png" alt="" sizes="" srcset="">
+                                <div class="center-align container container_compartir">
+                                   <img class="img_compartir responsive-img" src="/img/compartir.png" alt="" sizes="" srcset="">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="contenedor_SwiffLAD row">
+            <div class="Comparacion_seguros_medicos_container row">
                 <div class="col s12 m12 l12">
-                    <h1 class=" center-align">Krankenkassenvergleich</h1>
-                    <div class="container_item_SwiffLAD col s3 m3 l3">
-                        <div class="img_container">
-                            <img id="Familia" class="center-align responsive-img" src="/img/Familia.png" alt=""> 
+                    <h1 class="Comparacion_seguros_medicos_tittle center-align">Krankenkassenvergleich</h1>
+                    <div class="Comparacion_seguros_medicos_item col s12 m3 l3">
+                        <div class="Comparacion_seguros_medico_img_container">
+                            <img id="Familia" class="img_comparacion center-align responsive-img" src="/img/Familia.png" alt=""> 
                         </div>
-                        <h6>Alle Krankenkassen vergleichen</h6>
-                        <div class="text_container">
-                            <p>In der Schweiz gibt es über 60 Krankenkassen, daher lohnt sich ein Krankenkassenvergleich mit  Krakenkassencompare. Die Prämien sind nach Kanton unterschiedlich und es lohnt sich auf jedenfall zu sparen.</p>
-                        </div>
-                    </div>
-
-                    <div class="container_item_SwiffLAD col s3 m3 l3">
-                        <div class="img_container">
-                            <img id="Celebracion" class="center-align responsive-img" src="/img/Celebracion.png" alt=""> 
-                        </div>
-                        <h6>Unkompliziert sparen</h6>
-                        <div class="text_container">
-                            <p>Der unkompliziertes Krankenkassenvergleich der Schweiz mit wenigen Klicks, Sie erhalten unkimpliziert neutral und schnell lhre Angebot in ihrem Wohnkaton.</p>
+                        <h6 class="Comparacion_seguro_titulos">Alle Krankenkassen vergleichen</h6>
+                        <div class="Comparacion_seguros_medicos_item_text">
+                            <p class="comparacion_item_text">In der Schweiz gibt es über 60 Krankenkassen, daher lohnt sich ein Krankenkassenvergleich mit  Krakenkassencompare. Die Prämien sind nach Kanton unterschiedlich und es lohnt sich auf jedenfall zu sparen.</p>
                         </div>
                     </div>
 
-                    <div class="container_item_SwiffLAD col s3 m3 l3">
-                        <div class="img_container">
-                            <img id="Amigas" class="center-align responsive-img" src="/img/Amigas.png" alt=""> 
+                    <div class="Comparacion_seguros_medicos_item col s12 m3 l3">
+                        <div class="Comparacion_seguros_medico_img_container">
+                            <img id="Celebracion" class="img_comparacion center-align responsive-img" src="/img/Celebracion.png" alt=""> 
                         </div>
-                        <h6>Individueller Vergleich</h6>
-                        <div class="text_container">
-                            <p>Wir vergleichen Jugendliche wie Paare oder Familien. lhre Wünsche und Bedüfnisse stehen im Vordergrund. Ob ein Wechsel oder eine Anpassung, wir helfen lhnen das passende Angebot zu finden.</p>
+                        <h6 class="Comparacion_seguro_titulos" >Unkompliziert sparen</h6>
+                        <div class="Comparacion_seguros_medicos_item_text">
+                            <p class="comparacion_item_text">Der unkompliziertes Krankenkassenvergleich der Schweiz mit wenigen Klicks, Sie erhalten unkimpliziert neutral und schnell lhre Angebot in ihrem Wohnkaton.</p>
                         </div>
                     </div>
 
-                    <div class="col s3 m3 l3">
-                        <div class="img_container">
-                            <img id="Familia2" class="center-align responsive-img" src="/img/Familia2.png" alt=""> 
+                    <div class="Comparacion_seguros_medicos_item col s12 m3 l3">
+                        <div class="Comparacion_seguros_medico_img_container">
+                            <img id="Amigas" class="img_comparacion center-align responsive-img" src="/img/Amigas.png" alt=""> 
                         </div>
-                        <h6>Famillienvergleich</h6>
-                        <div class="text_container">
-                            <p>Wir helfen ignen die günstigste Zahnzusatzversicherung für kinder. Nutzen Sie unseren Krankenkassevergleich.</p>
+                        <h6 class="Comparacion_seguro_titulos" >Individueller Vergleich</h6>
+                        <div class="Comparacion_seguros_medicos_item_text">
+                            <p class="comparacion_item_text">Wir vergleichen Jugendliche wie Paare oder Familien. lhre Wünsche und Bedüfnisse stehen im Vordergrund. Ob ein Wechsel oder eine Anpassung, wir helfen lhnen das passende Angebot zu finden.</p>
+                        </div>
+                    </div>
+
+                    <div class="Comparacion_seguros_medicos_item_last col s12  m3 l3">
+                        <div class="Comparacion_seguros_medico_img_container">
+                            <img id="Familia2" class="img_comparacion center-align responsive-img" src="/img/Familia2.png" alt=""> 
+                        </div>
+                        <h6 class="Comparacion_seguro_titulos" >Famillienvergleich</h6>
+                        <div class="Comparacion_seguros_medicos_item_text">
+                            <p class="comparacion_item_text" >Wir helfen ignen die günstigste Zahnzusatzversicherung für kinder. Nutzen Sie unseren Krankenkassevergleich.</p>
                         </div>
                     </div>
                 </div>
@@ -673,71 +1288,71 @@
         </div>
         <div class="container_tipo_seguros">
             <div class="row">
-                <h1 class="center-align" >VERSICHERUNGSARTEN</h1>
+                <h1 class="container_tipo_seguros_tittle center-align" >VERSICHERUNGSARTEN</h1>
                 <div class="col s12 m6 l6">
                     <div class="row">
                         <i class="container_icon_tipo_seguros medium material-icons">chevron_right</i>
                             <div>
-                                <h4 class="container_tipo_seguros black-text">Krankenkassen</h4>
+                                <h4 class="container_tipo_seguros_tittles black-text">Krankenkassen</h4>
                             </div>
                             <div class="linea_gris"></div>
                     </div>
                     <div class="row">
                         <i class="container_icon_tipo_seguros medium material-icons">chevron_right</i>
                             <div>
-                                <h4 class="container_tipo_seguros black-text">Retchtsschutz</h4>
+                                <h4 class="container_tipo_seguros_tittles black-text">Retchtsschutz</h4>
                             </div>
                             <div class="linea_gris"></div>
                     </div>
                     <div class="row">
                         <i class="container_icon_tipo_seguros medium material-icons">chevron_right</i>
                             <div>
-                                <h4 class="container_tipo_seguros black-text">Zusatzversicherung</h4>
+                                <h4 class="container_tipo_seguros_tittles black-text">Zusatzversicherung</h4>
                             </div>
                             <div class="linea_gris"></div>
                     </div>
                     <div class="row">
                         <i class="container_icon_tipo_seguros medium material-icons">chevron_right</i>
                             <div>
-                                <h4 class="container_tipo_seguros black-text">Lebensversicherung</h4>
+                                <h4 class="container_tipo_seguros_tittles black-text">Lebensversicherung</h4>
                             </div>
                             <div class="linea_gris"></div>
                     </div>
                     <div class="row">
                         <i class="container_icon_tipo_seguros medium material-icons">chevron_right</i>
                             <div>
-                                <h4 class="container_tipo_seguros black-text">Autoversicherung</h4>
+                                <h4 class="container_tipo_seguros_tittles black-text">Autoversicherung</h4>
                             </div>
                             <div class="linea_gris"></div>
                     </div>
                     <div class="row">
                         <i class="container_icon_tipo_seguros medium material-icons">chevron_right</i>
                             <div>
-                                <h4 class="container_tipo_seguros black-text">Hausrat & Privathaftpflitcht</h4>
+                                <h4 class="container_tipo_seguros_tittles black-text">Hausrat & Privathaftpflitcht</h4>
                             </div>
                             <div class="linea_gris"></div>
                     </div>
                     <div class="row">
                         <i class="container_icon_tipo_seguros medium material-icons">chevron_right</i>
                             <div>
-                                <h4 class="container_tipo_seguros black-text">Krakentaggeld</h4>
+                                <h4 class="container_tipo_seguros_tittles black-text">Krakentaggeld</h4>
                             </div>
                             <div class="linea_gris"></div>
                     </div>
                 </div>
                 <div class="col s12 m6 l6">
-                    <img class="suiza_map" src="/img/suisse map.jpg" >
+                    <img class="responsive-img suiza_map" src="/img/suisse map.jpg" >
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col s12 m8 l8">
+            <div class="col s12 m8 l8 container_que_es_SWIFFLEAD">
                 <div class="box-red">
                     <div class="container_h2_text">
-                        <h2 class="white-text center-align">WAS IST EIN SWIFFLEAD?</h2>
+                        <h2 class="SWIFFLEAD_tittle white-text center-align">WAS IST EIN SWIFFLEAD?</h2>
                     </div>
                     <div class="container_parafo_redbox">
-                        <h5 class="container white-text center-align"> Ein Swifflead ist die Kombination einer Online-Versicherungsanfrage und einem Telefonkontakt</h5>
+                        <h5 class="SWIFFLEAD_text container white-text center-align"> Ein Swifflead ist die Kombination einer Online-Versicherungsanfrage und einem Telefonkontakt</h5>
                     </div>
                 </div>
             </div>
@@ -745,25 +1360,27 @@
             <div class="col s12 m4 l4">
                 <div class="box_ligth_pink">
                     <div class="container_h2_login">
-                        <h4 class=" asesoriamiento_text center-align black-text">Krankenkassen-Beratung</h4>
+                        <h4 class=" asesoriamiento_tittle center-align black-text">Krankenkassen-Beratung</h4>
                     </div>
                     <div class="linea_gris"></div>
-                    <div class="container_p_login">
-                        <h5 class="left-align black-text">Sie haben Fragen zu lher Versicherung oder möchten mehr einsparen?</h5>
-                    </div>
                     <div class="row">
                         <div class="container_p_login">
-                            <h5 class="left-align black-text">Hier können Sie die Krankenkasse ganz einfach wechsein oder vergleichen</h5>
+                            <h5 class="asesoriamiento_text left-align black-text">Sie haben Fragen zu lher Versicherung oder möchten mehr einsparen?</h5>
                         </div>
                     </div>
                     <div class="row">
                         <div class="container_p_login">
-                            <h5 class="left-align black-text">Jetzt von Einzel- und Familienrabatt profitieren</h5>
+                            <h5 class="asesoriamiento_text left-align black-text">Hier können Sie die Krankenkasse ganz einfach wechsein oder vergleichen</h5>
                         </div>
                     </div>
                     <div class="row">
                         <div class="container_p_login">
-                            <h5 class="left-align black-text">Schreiben Sie uns und Sie erhalten eine Rückmeldung am selben Tag</h5>
+                            <h5 class="asesoriamiento_text left-align black-text">Jetzt von Einzel- und Familienrabatt profitieren</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="container_p_login">
+                            <h5 class="asesoriamiento_text left-align black-text">Schreiben Sie uns und Sie erhalten eine Rückmeldung am selben Tag</h5>
                         </div>
                     </div>
                     <div class="linea_punteada"></div>
@@ -772,8 +1389,8 @@
         </div>
         <div class="contenedor_SwiffLAD row">
             <div class="col s12 m12 l12">
-                <h1 class=" center-align">WIE ENTSTEHT EN  SwiffLAD?</h1>
-                <div class="container_item_SwiffLAD col s3 m3 l3">
+                <h1 class="SwiffLAD_tittle center-align">WIE ENTSTEHT EN  SwiffLAD?</h1>
+                <div class="container_item_SwiffLAD col s12 m3 l3">
                     <div class="img_container">
                         <img id="perfil" class="center-align responsive-img" src="/img/perfil_logo.png" alt="">
                     </div>
@@ -782,8 +1399,8 @@
                     </div>
                 </div>
 
-                <div class="container_item_SwiffLAD col s3 m3 l3">
-                    <div class="img_container">
+                <div class="container_item_SwiffLAD col s12 m3 l3">
+                    <div class="img_container_2">
                         <img id="lupa" class="center-align responsive-img" src="/img/lupa_logo.png" alt="">
                     </div>
                     <div class="text_container">
@@ -791,8 +1408,8 @@
                     </div>
                 </div>
 
-                <div class="container_item_SwiffLAD col s3 m3 l3">
-                    <div class="img_container">
+                <div class="container_item_SwiffLAD col s12 m3 l3">
+                    <div class="img_container_3">
                         <img id="consola" class="center-align responsive-img" src="/img/consola.png" alt="">
                     </div>
                     <div class="text_container">
@@ -800,8 +1417,8 @@
                     </div>
                 </div>
 
-                <div class="col s3 m3 l3">
-                    <div class="img_container">
+                <div class="col s12 m3 l3">
+                    <div class="img_container_4">
                         <img id="calendario" class="center-align responsive-img" src="/img/calendario_logo.png" alt="">
                     </div>
                     <div class="text_container">
@@ -830,7 +1447,7 @@
             <div class="box-red-servicios col s12 m8 l8">
                 <div class="row">
                     <div class="container container_servicios_adicionales">
-                        <h4 class="left-align"> WEITERE DIENSTLEISTUNGEN: </h4>
+                        <h4 class="servicios_adicionales left-align"> WEITERE DIENSTLEISTUNGEN: </h4>
                     </div>
                 </div>
                 <div class="row">
@@ -843,7 +1460,7 @@
             </div>
             <div class="box-blue-servicios col s12 m4 l4">
                 <div class="container_img_perfil_teclado row">
-                    <div class="img_container">
+                    <div class="img_container_jetzt">
                         <img class="center-aling img_perfil_teclado" src="/img/icono_perfil_teclado.png" alt="">
                     </div>
                 </div>
@@ -942,7 +1559,7 @@
         <div class="box_red_blood row">
             <div class="row">
                 <div class="center-align col s12">
-                    <h3 class="white-text" >DIE VORTEILE GEGENÜBER KLASSISCHEN LEADS</h2>
+                    <h3 class="ventajas_comparacion white-text" >DIE VORTEILE GEGENÜBER KLASSISCHEN LEADS</h2>
                 </div>
             </div>
             <div class="row">
@@ -952,7 +1569,7 @@
             </div>
             <div class="row">
                 <div class="center-align col s12">
-                    <h2 class="white-text">POTENTIALVERGLEICH</h2>
+                    <h2 class="comparacion_potencial white-text">POTENTIALVERGLEICH</h2>
                 </div>
             </div>
             <div class="row">
@@ -960,63 +1577,63 @@
                     <div class="small_box_pink">
                         <div class="center-align row">
                             <div class="small_box_blue">
-                                <h2 class="white-text">KLASSICHE LEADS</h2>
+                                <h2 class="classic_leads white-text">KLASSICHE LEADS</h2>
                             </div>
                         </div>
                         <div class="rigth-align container container_pink_up">
-                                <h5 class="white-text"> 3 Leads = max 1 Kundentermin</h5>
+                                <h5 class="classic_leads_text white-text"> 3 Leads = max 1 Kundentermin</h5>
                         </div>
                         <div class="linea_gris"></div>
                         <div class="rigth-align container container_pink_down">
-                                <h5 class="white-text"> Pro Kundentermin = 1 Versicherungsabschluss</h5>
+                                <h5 class="classic_leads_text white-text"> Pro Kundentermin = 1 Versicherungsabschluss</h5>
                         </div>
                     </div>
                 </div>
                 <div class=" col s12 m6 l6">
                     <div class="box_grey_ligth">
-                        <div class="center-align ">
+                        <div class="center-align row">
                             <div class="box_blue_ligth">
-                                <h2>SWIFFLEAD</h2>
+                                <h2 class="swifflead" >SWIFFLEAD</h2>
                             </div>
                         </div>
                         <div class="container_large left-align ">
-                            <img class="img_incorrecto" src="/img/no correcto-icon.png" alt="">
-                            <h5>1 Telelad = 1 Kundentermin</h5> 
+                            <img class="img_incorrecto_leads" src="/img/no correcto-icon.png" alt="">
+                            <h5 class="swifflead_text">1 Telelad = 1 Kundentermin</h5> 
                         </div>
                         <div class="linea_gris"></div>
                         <div class="container_large left-align ">
-                            <img class="img_correcto" src="/img/correcto-icon.png" alt="">
-                            <h5>1 Kundentermin = mehrere Versicherungsabschlüsse</h5>
+                            <img class="img_correcto_leads" src="/img/correcto-icon.png" alt="">
+                            <h5 class="swifflead_text">1 Kundentermin = mehrere Versicherungsabschlüsse</h5>
                         </div>
                         <div class="linea_gris"></div>
                         <div class="container_large left-align ">
-                            <img class="img_correcto" src="/img/correcto-icon.png" alt="">
-                            <h5> Krankenkasse</h5>
+                            <img class="img_correcto_leads" src="/img/correcto-icon.png" alt="">
+                            <h5 class="swifflead_text" > Krankenkasse</h5>
                         </div>
                         <div class="linea_gris"></div>
                         <div class="container_large left-align ">
-                            <img class="img_correcto" src="/img/correcto-icon.png" alt="">
-                            <h5>Retchtsschutz</h5>
+                            <img class="img_correcto_leads" src="/img/correcto-icon.png" alt="">
+                            <h5 class="swifflead_text" >Retchtsschutz</h5>
                         </div>
                         <div class="linea_gris"></div>
                         <div class="container_large left-align ">
-                            <img class="img_correcto" src="/img/correcto-icon.png" alt="">
-                            <h5>Lebensversicherung</h5>
+                            <img class="img_correcto_leads" src="/img/correcto-icon.png" alt="">
+                            <h5 class="swifflead_text">Lebensversicherung</h5>
                         </div>
                         <div class="linea_gris"></div>
                         <div class="container_large left-align ">
-                            <img class="img_correcto" src="/img/correcto-icon.png" alt="">
-                            <h5>Autoversicherung</h5>
+                            <img class="img_correcto_leads" src="/img/correcto-icon.png" alt="">
+                            <h5 class="swifflead_text">Autoversicherung</h5>
                         </div>
                         <div class="linea_gris"></div>
                         <div class="container_large left-align ">
-                            <img class="img_correcto" src="/img/correcto-icon.png" alt="">
-                            <h5>Hausrat & Privathaftpflitcht</h5>
+                            <img class="img_correcto_leads" src="/img/correcto-icon.png" alt="">
+                            <h5 class="swifflead_text">Hausrat & Privathaftpflitcht</h5>
                         </div>
                         <div class="linea_gris"></div>
                         <div class="container_large left-align ">
-                            <img class="img_correcto" src="/img/correcto-icon.png" alt="">
-                            <h5>Krakenktaggeld</h5>
+                            <img class="img_correcto_leads" src="/img/correcto-icon.png" alt="">
+                            <h5 class="swifflead_text">Krakenktaggeld</h5>
                         </div>
                     </div>
                 </div>
@@ -1033,35 +1650,37 @@
         </div>
         <div>
             <div class="row">
-                <h1 class="center-align">KOSTENVERGLEICH</h1>
+                <h1 class="costos_comparacion_tittle center-align">KOSTENVERGLEICH</h1>
             </div>
             <div class="row">
                 <p class="center-align">Analog dazu der Kostenvergleich</p>
                 <div class="col s12 m8 l8">
-                    <p class="right-align">Erfahrungsgemäss resultieren aus 10 klassischen Leads im Durchschnitt 3 Kundentermine. Berechnnungsbeispiel:</p>
+                    <p class="costos_comparacion_texto right-align">Erfahrungsgemäss resultieren aus 10 klassischen Leads im Durchschnitt 3 Kundentermine. Berechnnungsbeispiel:</p>
                 </div>
                 <div class="col s12 m4 l4">
                     <div class="box_ligth_pink">
                         <div class="container_h2_login">
-                            <h4 class="asesoriamiento_text center-align black-text">Krankenkassen-Beratung</h4>
+                            <h4 class="asesoriamiento_tittle center-align black-text">Krankenkassen-Beratung</h4>
                         </div>
                         <div class="linea_gris"></div>
-                        <div class="container_p_login">
-                            <h5 class="left-align black-text">Sie haben Fragen zu lher Versicherung oder möchten mehr einsparen?</h5>
-                        </div>
                         <div class="row">
                             <div class="container_p_login">
-                                <h5 class="left-align black-text">Hier können Sie die Krankenkasse ganz einfach wechsein oder vergleichen</h5>
+                                <h5 class="asesoriamiento_text left-align black-text">Sie haben Fragen zu lher Versicherung oder möchten mehr einsparen?</h5>
                             </div>
                         </div>
                         <div class="row">
                             <div class="container_p_login">
-                                <h5 class="left-align black-text">Jetzt von Einzel- und Familienrabatt profitieren</h5>
+                                <h5 class="asesoriamiento_text left-align black-text">Hier können Sie die Krankenkasse ganz einfach wechsein oder vergleichen</h5>
                             </div>
                         </div>
                         <div class="row">
                             <div class="container_p_login">
-                                <h5 class="left-align black-text">Schreiben Sie uns und Sie erhalten eine Rückmeldung am selben Tag</h5>
+                                <h5 class="asesoriamiento_text left-align black-text">Jetzt von Einzel- und Familienrabatt profitieren</h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="container_p_login">
+                                <h5 class="asesoriamiento_text left-align black-text">Schreiben Sie uns und Sie erhalten eine Rückmeldung am selben Tag</h5>
                             </div>
                         </div>
                         <div class="linea_punteada"></div>
@@ -1072,55 +1691,55 @@
         <div class="row">
             <div class=" col s12 m6 l6">
                 <div class="small_box_pink_klassiche_lead">
-                    <div class="center-align row">
+                    <div class="center-align ">
                         <div class="small_box_blue">
-                            <h4 class="white-text">KLASSICHE LEADS</h4>
+                            <h4 class="classic_leads_precio white-text">KLASSICHE LEADS</h4>
                         </div>
                     </div>
                     <div class="small_box_white center-align ">
                         <div class="container">
-                            <h3>310 CHF,-</h3>
+                            <h3 class="left-align">310 CHF,-</h3>
                         </div>
                     </div>
                     <div class="containers_container_pink">
-                        <div class="rigth-align container container_pink_up">
+                        <div class="rigth-align container">
                                 <h6 class="white-text">Krankenkassen-Lead: 50 CHF,-</h6>
                         </div>
                         <div class="linea_gris"></div>
-                        <div class="rigth-align container container_pink_down">
+                        <div class="rigth-align container">
                                 <h6 class="white-text">Rechtsschutz-Lead: 45 CHF,- </h6>
                         </div>
                         <div class="linea_gris"></div>
-                        <div class="rigth-align container container_pink_up">
+                        <div class="rigth-align container">
                             <h6 class="white-text">Zusatzversicherungs-Lead: 50 CHF,- </h6>
                         </div>
                         <div class="linea_gris"></div>
-                        <div class="rigth-align container container_pink_down">
+                        <div class="rigth-align container">
                                 <h6 class="white-text">Lebensversicherungs-Lead: 85 CHF,-</h6>
                         </div>
                         <div class="linea_gris"></div>
-                        <div class="rigth-align container container_pink_up">
+                        <div class="rigth-align container">
                             <h6 class="white-text">Hausrat & Pirvathafpflicht-Lead: 40 CHF,-</h6>
                         </div>
                         <div class="linea_gris"></div>
-                        <div class="rigth-align container container_pink_down">
+                        <div class="rigth-align container">
                                 <h6 class="white-text">Krakentaggeld-Lead: 40 CHF,-</h6>
                         </div>
                         <div class="linea_gris"></div>
                     </div>
                 </div>
             </div>
-            <div class=" col s12 m6 l6">
+            <div class="col s12 m6 l6">
                 <div class="box_grey_ligth">
                     <div class="center-align ">
                         <div class="box_blue_ligth">
-                            <h4>SWIFFLEAD PAKET STANDARD</h2>
+                            <h4 class="paquete_standart">SWIFFLEAD PAKET STANDARD</h2>
                         </div>
                     </div>
                     <div class="small_box_pink_paket center-align ">
-                        <div class="container">
-                            <p class="white-text flotar_derecha iva " >exkl.Mwst.</p>
-                            <h3 class="white-text" >99 CHF,-</h3>
+                        <div class="container precio_swifflead">
+                            <h3 class="left-align precio_leads_text white-text" >99 CHF</h3>
+                            <p class="white-text flotar_derecha_iva iva" >exkl.Mwst.</p>
                         </div>
                     </div>
                     <div class="containers_large_paket">
@@ -1164,10 +1783,11 @@
                 </div>
             </div>
         </div>
+        <div class="footer">
+            <p class="white-text center-align footer_text">© 2021   Swiffleads.ch All rigths reserved | Impressum | AGB</p>
+        </div>  
     </div>
-    <div class="footer">
-        <p class="white-text center-align footer_text">© 2021   Swiffleads.ch All rigths reserved | Impressum | AGB</p>
-    </div>  
+    
     
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
