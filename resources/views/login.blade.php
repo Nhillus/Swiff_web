@@ -42,6 +42,8 @@
         max-width: 1200px;
         background-color: #fd002f;
         box-shadow: 0 1px 9px rgb(0 0 0 / 8%);
+        position: relative;
+        overflow: hidden;
     }
     .container_login {
         position: relative;
@@ -108,6 +110,44 @@
         bottom: 500px;
         font-size: 26px;
     }
+    @media only screen and (max-width: 790px){
+        .container_login {
+            width: 55%;
+        }
+    }
+
+
+    @media only screen and (max-width: 690px){ 
+        .container_login {
+            width: 65%;
+        }
+        .footer_text {
+            font-size: 20px;
+        }
+    @media only screen and (max-width: 650px){
+        .container_login {
+            width: 75%;
+            
+        }
+    }
+    
+    @media only screen and (max-width: 600px){
+        .container_login {
+            width: 85%;
+        }
+        
+    }
+    @media only screen and (max-width: 580px){
+        .container_login {
+            width: 100%;
+        }
+        .footer_text {
+            font-size: 16px;
+        }
+    }
+}
+    
+    
 
 </style>
 <body>
@@ -115,14 +155,14 @@
         <!--Navegador de Swiffleads -->
         <nav class="navbar " >
             <div class="nav-wrapper">
-            <div class="contenedor_logo">
-                <a href="#" class="logo brand-logo">Swiffleads</a>
-            </div>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="sass.html">VERSICHERUNGSARTEN</a></li>
-                <li><a href="badges.html">KOTENVERGLEICH</a></li>
-                <li><a href="collapsible.html">KONTAKT</a></li>
-            </ul>
+                <div class="contenedor_logo">
+                    <a href="#" class="logo brand-logo">Swiffleads</a>
+                </div>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="sass.html">VERSICHERUNGSARTEN</a></li>
+                    <li><a href="badges.html">KOTENVERGLEICH</a></li>
+                    <li><a href="collapsible.html">KONTAKT</a></li>
+                </ul>
             </div>
         </nav>
         <div class="container_login center-align">
