@@ -37,11 +37,13 @@
         background-color: #edf2f5;
     }
     .grid {
-        height: 1100px;
+        height: fit-content;
         margin: 0 auto;
         max-width: 1200px;
         background-color: #fd002f;
         box-shadow: 0 1px 9px rgb(0 0 0 / 8%);
+        position: relative;
+        overflow: hidden;
     }
     .container_login {
         position: relative;
@@ -112,6 +114,16 @@
     textarea.materialize-textarea{
         height: 200px;
    }
+   @media only screen and (max-width: 690px){ 
+        .footer_text {
+            font-size: 20px;
+        }
+    }
+    @media only screen and (max-width: 580px){
+        .footer_text {
+            font-size: 16px;
+        }
+    }
 </style>
 <body>
     <div class="grid">
