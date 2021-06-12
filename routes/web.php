@@ -59,3 +59,7 @@ Route::get('AGB', function(){
     return view('AGB');
 
 });
+Route::get('resize', function(){
+    return view('resize');
+
+});
