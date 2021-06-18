@@ -40,7 +40,7 @@
         max-width: 1200px;
         background-color:white; 
         box-shadow: 0 1px 9px rgb(0 0 0 / 8%);
-        height: 1650px;
+        height: fit-content;
     }
     .container {
         width: 80% !important;
@@ -66,7 +66,7 @@
     }
     .box-pink-citas {
         background-color: #fd3957;
-        height: 400px;
+        height: fit-content;
         padding-top: 40px;
     }
 
@@ -75,7 +75,7 @@
     }
 
     .container_h2_login {
-        padding:0px 40px;
+        padding:0px 20px;
     }
 
     .container_p_login {
@@ -92,7 +92,7 @@
     }
 
     #container_password {
-        padding:0px 40px;
+        padding:0px 20px;
     }
 
     ::placeholder { /* Most modern browsers support this now. */
@@ -489,6 +489,626 @@
         padding-top:10px;
         font-size: 26px;
     }
+    .ayudamos_cambiar {
+        font-weight: bold;
+    }
+     /* Media Queries */
+    /*Diferencia entre 247px en un sml6*/
+    /*Diferencia entre 28px en un sml3*/
+    @media only screen and (max-width: 1132px)
+    {
+        /*Equivale a 850 width*/
+        
+        .Comparacion_seguros_medicos_container
+        {
+            height: 600px;
+        }
+        .Comparacion_seguros_medicos_item {
+            height: 470px;
+        }
+        .container_button_precios_text {
+            font-size: 12px;
+         }
+    }
+    @media only screen and (max-width: 1025px)
+    {
+        
+        .container_tipo_seguros_tittles {
+            font-size: 24px;
+        }
+        .box_ligth_pink {
+            height: 780px;
+        }
+        .Comparación_primas {
+            font-size: 30px;
+        }
+        .Comparación_primas_text {
+            font-size: 24px;
+        }
+    }
+    @media only screen and (max-width: 1000px)
+    {
+        .box_ligth_pink {
+            height: 800px;
+        }
+        .asesoriamiento_tittle{
+            font-size: 34px;
+        }
+        .Asesoramiento_personal {
+            font-size: 34px;
+        }
+        .ayudamos_cambiar {
+            font-size: 34px; 
+        }
+        .Comparación_primas {
+            font-size: 26px;
+        }
+        .Comparación_primas_text {
+            font-size: 20px;
+        }
+    }
+    @media only screen and (max-width: 995px)
+    {
+        .box_ligth_pink {
+            height: 860px;
+        }
+        .container_button_precios_text {
+            font-size: 9px;
+         }
+        .button_container_registro {
+            height: 30px;
+        }
+        .Comparación_primas {
+            font-size: 24px;
+        }
+        .Comparación_primas_text {
+            font-size: 18px;
+        }
+    }
+    @media only screen and (max-width: 990px)
+    {
+        .box_ligth_pink {
+            height: 720px;
+        }
+        .button_registro {
+            font-size: 9px;
+        }
+        .Comparación_primas {
+            font-size: 20px;
+        }
+        .Comparación_primas_text {
+            font-size: 16px;
+        }
+    }
+    @media only screen and (max-width : 987px) {
+       
+        #container_email {
+            padding: 0px 0px;
+        }
+        .asesoriamiento_tittle {
+            font-size: 28px;
+        }
+        .Asesoramiento_personal {
+            font-size: 28px;
+        }
+        .ayudamos_cambiar {
+            font-size: 28px;
+        }
+        .asesoriamiento_text {
+            font-size:21px;
+        }
+        .box_ligth_pink {
+            height: 700px;
+        }
+        .button_registro {
+            font-size: 8px;
+        }
+        .Comparación_primas {
+            font-size: 16px;
+        }
+        .Comparación_primas_text {
+            font-size: 14px;
+        }
+    }
+    @media only screen and (max-width : 950px) {
+        .box_ligth_pink {
+            height: 760px;
+        }
+        .container_button_precios_text {
+            font-size: 7px;
+         }
+        .classic_leads {
+            font-size: 26px;
+        }
+        .swifflead {
+            font-size: 26px;
+        }
+        .classic_leads_text {
+            font-size: 16px;
+        }
+        .small_box_pink {
+            height: fit-content;
+            padding-bottom: 15px;
+        }
+        .swifflead_text {
+            font-size: 16px;
+        }
+        .img_incorrecto_leads {
+            width: 20px;
+            height: 20px;
+        }
+        .img_correcto_leads {
+            width: 20px;
+            height: 20px;
+            position: relative;
+            top: 2px;
+        }
+        .paquete_standart {
+            font-size: 20px;
+        }
+        .classic_leads_precio {
+            font-size: 20px;
+        }
+    }
+    @media only screen and (max-width : 900px) {
+        
+        .asesoriamiento_tittle {
+            font-size: 24px;
+        }
+        .Asesoramiento_personal {
+            font-size: 24px;
+        }
+        .ayudamos_cambiar {
+            font-size: 24px;
+        }
+        .asesoriamiento_text {
+            font-size:18px;
+        }
+        .box_ligth_pink {
+            height: 640px;
+        }
+        .box_red_large_text {
+            font-size: 24px;
+        }
+        .SWIFFLEAD_tittle {
+            font-size: 40px;
+        }
+        .SWIFFLEAD_text {
+            font-size:12.8px;
+        }
+
+        .box-red {
+            height: 450px;
+        }
+        
+        .container_que_es_SWIFFLEAD {
+        }
+    }
+    @media only screen and (max-width : 890px) {
+        .ahorro_text {
+            font-size: 24px;
+        }
+    }
+    @media only screen and (max-width : 870px) {
+        .SwiffLAD_tittle {
+            font-size: 32px;
+        }
+        .ahorro_text {
+            font-size: 18px;
+        }
+        .paquete_standart {
+            font-size: 20px;
+        }
+        .container_text_beneficios {
+            font-size: 18px;
+        }
+        .SWIFFLEAD_tittle {
+            font-size: 38px;
+        }
+    }
+    @media only screen and (max-width : 859px) {
+        .SwiffLAD_tittle {
+            font-size: 32px;
+        }
+        .container_tipo_seguros_tittles {
+            font-size: 16px;
+        }
+        .asesoriamiento_tittle {
+            font-size: 18px;
+        }
+        .Asesoramiento_personal {
+            font-size: 18px;
+        }
+        .ayudamos_cambiar {
+            font-size: 18px;
+        }
+        .asesoriamiento_text {
+            font-size:17px;
+        }
+        .box_ligth_pink {
+            height: 670px;
+        }
+    }
+    @media only screen and (max-width : 822px) {
+        
+        .input-field input[type=text] {
+            font-size: 11px;
+        }
+        .Premios_text_tittle {
+            font-size: 16px;
+        }
+        .asesoriamiento_tittle {
+            font-size: 14px;
+        }
+        .asesoriamiento_text {
+            font-size:16px;
+        }
+        .box_ligth_pink {
+            height: 620px;
+        }
+        .comparacion_pulpo_tittle {
+            font-size: 25px;
+        }
+         .SWIFFLEAD_tittle {
+            font-size: 36px;
+        }
+    }
+    @media only screen and (max-width : 800px) {
+        
+        .Premios_text_tittle {
+            font-size: 14px;
+        }
+        .Premios_text {
+            font-size: 10px;
+        }
+        .box_ligth_pink {
+            height: 620px;
+        }
+        
+        .comparacion_pulpo_text {
+            font-size: 13px;
+        }
+
+        .SWIFFLEAD_tittle {
+            font-size: 34px;
+        }
+
+        .box-red {
+            height: 300px;
+        }
+       
+    }
+    @media only screen and (max-width : 790px) {
+        .Premios_text_tittle {
+            font-size: 12px;
+        }
+        .Premios_text {
+            font-size: 9px;
+        }
+        .Comparacion_seguros_medicos_tittle {
+            font-size: 57px;
+        }
+        .comparacion_item_text {
+            font-size: 11px;
+        }
+        .img_comparacion {
+            width: 250px !important;
+            height: 150px !important;
+        }
+        .Comparacion_seguro_titulos {
+            font-size: 14px;
+        }
+        .asesoriamiento_text {
+            font-size:14px;
+        }
+        .box_ligth_pink {
+            height: 510px;
+        }
+        .costos_comparacion_tittle {
+            font-size: 32px; 
+        }
+       .costos_comparacion_texto {
+           font-size:12px;
+           margin: 0px 35px;  
+       }
+       .SWIFFLEAD_tittle {
+            font-size: 24px;
+        }
+    }
+    @media only screen and (max-width : 780px) {
+        .box_ligth_pink {
+            height: 550px;
+        }
+        .SWIFFLEAD_tittle {
+            font-size: 22px;
+        }
+        
+    }
+    @media only screen and (max-width : 760px) {
+        .box_ligth_pink {
+            height: 580px;
+        }
+        .box_red_large_text {
+            font-size: 24px;
+        }
+        .SWIFFLEAD_tittle {
+            font-size: 20px;
+        }
+        
+    }
+    @media only screen and (max-width : 740px) {
+        .box_ligth_pink {
+            height: 600px;
+        }
+        .container_text_beneficios {
+            font-size: 16px;
+        }
+        
+    }
+    @media only screen and (max-width : 728px) {
+        .Comparacion_seguros_medicos_tittle {
+            font-size: 47px;
+        }
+        .asesoriamiento_text {
+            font-size:9px;
+        }
+        .box_ligth_pink {
+            height: 380px;
+        }
+        .container_p_login {
+            padding: 0px 20px;
+        }
+        .text_container {
+            font-size: 12px;
+        }
+        .button_registro {
+            font-size: 6px;
+        }
+        .box_red_large_text {
+            font-size: 22px;
+        }
+        .asesoriamiento_tittle {
+            font-size: 10px;
+        }
+    }
+    @media only screen and (max-width: 690px){ 
+        .footer_text {
+            font-size: 20px;
+        }
+
+    @media only screen and (max-width : 672px) {
+        .container_tipo_seguros_tittles {
+            font-size: 14px;
+        }
+        .container_tipo_seguros_tittle {
+            font-size: 42px;
+        }
+        .box_ligth_pink {
+            height: 380px;
+        }
+    }
+    @media only screen and (max-width : 650px) {
+        .box_ligth_pink {
+            height: 390px;
+        }
+        .SWIFFLEAD_tittle {
+            font-size: 18px;
+        }
+    }
+
+    @media only screen and (max-width : 600px) {
+        .Comparacion_seguros_medicos_container {
+            height: 1500px;
+        }
+        .box-red {
+            height: 1800px;
+            margin-bottom: 500px;
+        }
+        .servicios_adicionales {
+            font-size: 24px;
+        }
+        .Comparacion_seguros_medicos_tittle {
+            font-size: 37px;
+        }
+        .container_tipo_seguros_tittle {
+            font-size: 28px;
+        }
+        .container_tipo_seguros_tittles {
+            font-size: 26px;
+        }
+        .Comparacion_seguros_medicos_item {
+            border-right: 0px;
+            border-bottom: 3px solid grey;
+            margin-bottom: 10px;
+            height: 350px;
+        }
+        .container_button_precios_text {
+            font-size: 18px;
+        }
+        .button_registro {
+            font-size: 12px;
+        }
+        .button_precios {
+            width: 50%;
+        }
+        .Comparacion_seguro_titulos {
+            font-size: 18px;
+        }
+        .img_container {
+            position: relative;
+            left: 90px;
+        }
+        .img_container_2 {
+            position:relative;
+            left: 135px;
+        }
+        .img_container_3 {
+            position:relative;
+            left: 110px;
+        }
+        .img_container_4 {
+            position: relative;
+            left: 160px;
+        }
+        .comparacion_item_text {
+            font-size: 14px;
+        }
+        .SWIFFLEAD_tittle {
+            font-size: 32px;
+        }
+        .SWIFFLEAD_text {
+            font-size: 20px;
+        }
+        .input-field input[type=text] {
+            font-size:16px;
+        }
+        .Premios_text_tittle {
+            font-size: 26px;
+        }
+        .Premios_text {
+            font-size: 16px;
+        }
+        .box-red {
+            height: 480px;
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+        .box_ligth_pink {
+            height: fit-content;
+            padding-bottom: 10px;
+        }
+        .asesoriamiento_tittle {
+            font-size: 64px;
+        }
+        .asesoriamiento_text {
+            font-size:24px;
+        }
+        .ahorro_text {
+            font-size: 18px;
+        }
+        .box-red-large {
+            height: 780px;
+        }
+        .button_registro_ventajas {
+            font-size:8px;
+        }
+        .box_red_blood {
+            height: fit-content;
+        }
+        .comparacion_potencial { 
+            font-size: 26px;
+        }
+        .ventajas_comparacion {
+            font-size: 26px;
+        }
+        .Elegir_seguro_text {
+            font-size:11px;
+        }
+        .container_input {
+         margin-bottom: 20px;
+         padding-bottom: 1050px;
+        }
+        .container_que_es_SWIFFLEAD {
+            margin-bottom: -500px;
+        }
+        .costos_comparacion_texto {
+            text-align: center;
+        }
+    }
+    @media only screen and (max-width: 580px){
+        .footer_text {
+            font-size: 16px;
+        }
+    }
+    @media only screen and (max-width : 550px) {
+
+    .ahorro_text {
+            font-size: 16px;
+        }
+        .container_button_precios_text {
+            font-size: 14px;
+        }
+        .button_registro_ventajas {
+            font-size:8px;
+            width: 80%;
+        }
+    }
+    @media only screen and (max-width : 530px) {
+        .Comparacion_seguros_medicos_tittle {
+            font-size: 27px;
+        }
+        .Premios_text_tittle {
+            font-size: 24px;
+        }
+        .Premios_text {
+            font-size: 14px;
+        }
+        .asesoriamiento_tittle {
+            font-size: 32px;
+        }
+        .img_container {
+            position: relative;
+            left: 45px;
+        }
+        .img_container_2 {
+            position:relative;
+            left: 85px;
+        }
+        .img_container_3 {
+            position:relative;
+            left: 55px;
+        }
+        .img_container_4 {
+            position: relative;
+            left: 90px;
+        }
+        
+    }
+    @media only screen and (max-width : 515px) {
+        .img_container { 
+            position: relative;
+            left: 5px;
+        }
+        .img_container_2 {
+            position:relative;
+            left: 50px;
+        }
+        .img_container_3 {
+            position:relative;
+            left: 22px;
+        }
+        .img_container_4 {
+            position: relative;
+            left: 50px;
+        }
+    }
+    @media only screen and (max-width : 500px) {
+        .Comparacion_seguros_medicos_tittle {
+            font-size: 20px;
+        }
+        .Premios_text_tittle {
+            font-size: 18px;
+        }
+        .Premios_text {
+            font-size: 12px;
+        }
+        .img_container {
+            position: relative;
+            left: 5px;
+        }
+        .img_container_2 {
+            position:relative;
+            left: 15px;
+        }
+        .img_container_3 {
+            position:relative;
+            left: 22px;
+        }
+        .img_container_4 {
+            position: relative;
+            left: 20px;
+        }
+    }
 </style>
 <body>
     <div class="grid">
@@ -506,25 +1126,25 @@
             </div>
         </nav>
         <div class="row">
-            <h3 class="center-align">Persönliche oder digitale Beratung</h3>
+            <h3 class="center-align Asesoramiento_personal">Persönliche oder digitale Beratung</h3>
         </div>
         <div class="row">
             <div class="col s12 m8 l8">
                 <img class="responsive-img" src="/img/citas.png" > 
-                <h5>Wir helfen Ihnen die Krankenkasse zu wechseln</h5>
-                <p>Wer kennt es nicht? Lästige ungewünschte Telefonanrufe, aufdringliche Berater oder stundenlange 
+                <h5 class="ayudamos_cambiar">Wir helfen Ihnen die Krankenkasse zu wechseln</h5>
+                <p class="flow-text">Wer kennt es nicht? Lästige ungewünschte Telefonanrufe, aufdringliche Berater oder stundenlange 
                     Recherchen auf Webseiten der Krankenkassen.
                 </p>
-                <p>
+                <p class="flow-text">
                     Wenn Sie genau wissen mochten, welche Krakenkasse oder Zusatzversicherung lhren Bedurfnissen 
                     entspricht, sind Sie bei uns genau richtig. Unsere Experten sind Cicero zerifiziert (klicken Sie hier fur mehr Informationen) un helfen 
                     lhnen das beste Angebot zu finden.
                 </p>
-                <p>
+                <p class="flow-text">
                     Ruckruf von Montag 08:00 bis 20:00 Uhr bis Samstag 09:00 bis 16:00 Uhr. Teilen Sie uns lhre 
                     kotaktdaten mit und wir werden uns umgehend bei lhnen melden.
                 </p>
-                <p>
+                <p class="flow-text">
                     Wieso soll ich mich beraten lassen? - Viele unserer Interssenten wunschen 
                     eine Beratung, im die individuellen Leistugen und Services der Krakenkasse zu 
                     verstegen und die richtigen Produkte abzurchliessen.
@@ -532,57 +1152,59 @@
                 <div class="col s12 m12 l12">
                     <div class="box-pink-citas">
                         <div class="container_h2_login"><!-- -->
-                            <h4 class="left-align white-text">Krakenkassenprämien 2021 vergleichen</h2>
+                            <h4 class="Comparación_primas left-align white-text">Krakenkassenprämien 2021 vergleichen</h2>
                         </div>
                         <div class="row">
                             <div class="col s12 m12 l12">
                                 <div class="left-align container">
                                     <div class="container_large left-align ">
                                         <img class="img_correcto" src="/img/correcto-icon.png" alt="">
-                                        <h5 class="white-text">Prämien BAG 2021 vergleichen</h5> 
+                                        <h5 class="Comparación_primas_text white-text">Prämien BAG 2021 vergleichen</h5> 
                                     </div>
                                 </div>
                                 <div class="left-align container">
                                     <div class="container_large left-align ">
                                         <img class="img_correcto" src="/img/correcto-icon.png" alt="">
-                                        <h5 class="white-text">Unverbindlich Top-Offerte einholen</h5> 
+                                        <h5 class="Comparación_primas_text white-text">Unverbindlich Top-Offerte einholen</h5> 
                                     </div>
                                 </div>
-                                <div class="left-align container">
+                                <div class="Comparación_primas_text left-align container">
                                     <div class="container_large left-align ">
                                         <img class="img_correcto" src="/img/correcto-icon.png" alt="">
-                                        <h5 class="white-text">Bis 4`000 Franken pro Jahr sparen</h5> 
+                                        <h5 class="Comparación_primas_text white-text">Bis 4`000 Franken pro Jahr sparen</h5> 
                                     </div>
                                 </div>
-                                <div class="left-align container">
+                                <div class="Comparación_primas_text left-align container">
                                     <div class="container_large left-align ">
                                         <img class="img_correcto" src="/img/correcto-icon.png" alt="">
-                                        <h5 class="white-text">Optimieren und Geld sparen</h5> 
+                                        <h5 class="Comparación_primas_text white-text">Optimieren und Geld sparen</h5> 
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                         <div class="text_cita">
-                            <p> Welche Vorteile bringt mir eine solche Beratung? - Es gibt viele 
+                            <p class="flow-text"> Welche Vorteile bringt mir eine solche Beratung? - Es gibt viele 
                                 Vorteile bei einer personlichen Beratung, Nebst der Grundversicherung, Hier
                                 zahlen nebst den finanziellen Theme vor allem auch die Leistungen im 
                                 Hintergrund zu den wichtigen Entscheidungen.
                             </p>
-                            <p> 
+                            <p class="flow-text"> 
                                 Warum soil ich mich beraten lassen? - Jeder hat das Recht auf eine individuelle, 
                                 auf sich abgestimmte Krakenkassenversicherung, Nur mit einer personlich abgestim
                                 mten Versicherung profitieren Sie von Leistungen sowie Kosten und sind korrekt versichert.
                             </p>
-                            <p>   
+                            <p class="flow-text">   
                                 Wer Soli am Beratungsterminen dabei seins? - Wir empfehlen lhnen, dass alle Familienangehorige
                                 dabei sind Nicht nir wegen den Familienrabatten und Konditionen, sondern auch um ein Gesamtpaket 
                                 Auszuarbeiten, welches fur die ganze Familie zugeschnitten ist.
-                            </p>    
+                            </p>   
+                            <p class="flow-text"> 
                                 Wie kann ich einen Termin vereinbaren und wie lange dauert dieser? - Unsere Erfahrungen zeigen, das jeweils 30-60
                                 Minuten gerechnet werden sollte. In dieser Zeit wird eine IST-Analyse gemacht und danach die
                                 verschiedenen Angebote und Moglichkeiten vorgestellt und verglichen.
-                            <p>    
+                            </p>
+                            <p class="flow-text">    
                                 Einen Termin vereinbaren Sie ganz einfach mit dem Formular oben. Sobald wir lhre Kontaktdaten haben,
                                 melden wir uns unverzuglich bei lhnen.
                             </p>
@@ -592,25 +1214,27 @@
             <div class="col s12 m4 l4">
                 <div class="box_ligth_pink">
                     <div class="container_h2_login">
-                        <h4 class="asesoriamiento_text center-align black-text">Krankenkassen-Beratung</h4>
+                        <h4 class="asesoriamiento_tittle center-align black-text">Krankenkassen-Beratung</h4>
                     </div>
                     <div class="linea_gris"></div>
-                    <div class="container_p_login">
-                        <h5 class="left-align black-text">Sie haben Fragen zu lher Versicherung oder möchten mehr einsparen?</h5>
-                    </div>
                     <div class="row">
                         <div class="container_p_login">
-                            <h5 class="left-align black-text">Hier können Sie die Krankenkasse ganz einfach wechsein oder vergleichen</h5>
+                            <h5 class="asesoriamiento_text left-align black-text">Sie haben Fragen zu lher Versicherung oder möchten mehr einsparen?</h5>
                         </div>
                     </div>
                     <div class="row">
                         <div class="container_p_login">
-                            <h5 class="left-align black-text">Jetzt von Einzel- und Familienrabatt profitieren</h5>
+                            <h5 class="asesoriamiento_text left-align black-text">Hier können Sie die Krankenkasse ganz einfach wechsein oder vergleichen</h5>
                         </div>
                     </div>
                     <div class="row">
                         <div class="container_p_login">
-                            <h5 class="left-align black-text">Schreiben Sie uns und Sie erhalten eine Rückmeldung am selben Tag</h5>
+                            <h5 class="asesoriamiento_text left-align black-text">Jetzt von Einzel- und Familienrabatt profitieren</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="container_p_login">
+                            <h5 class="asesoriamiento_text left-align black-text">Schreiben Sie uns und Sie erhalten eine Rückmeldung am selben Tag</h5>
                         </div>
                     </div>
                     <div class="linea_punteada"></div>
