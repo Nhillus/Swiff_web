@@ -36,11 +36,12 @@
         background-color: #edf2f5;
     }
     .grid {
+        position: relative;
         margin: 0 auto;
         max-width: 1200px;
         background-color:white; 
         box-shadow: 0 1px 9px rgb(0 0 0 / 8%);
-        height: fit-content;
+        overflow: hidden;
     }
     .container {
         width: 80% !important;
@@ -307,7 +308,7 @@
         position:relative;
         bottom: 25px;
         margin: 0px 25px;
-        height: 680px;
+        height: fit-content;
         background-color: #fcebce
     }
 
@@ -316,8 +317,7 @@
     }
 
     .linea_punteada {
-        border-bottom: 3px solid black;
-        border-style:dashed;
+        border-bottom: 3px dashed black;
     }
     .container_ahorro {
         margin: 70px 0px 50px 0px;
@@ -516,9 +516,6 @@
         .container_tipo_seguros_tittles {
             font-size: 24px;
         }
-        .box_ligth_pink {
-            height: 780px;
-        }
         .Comparación_primas {
             font-size: 30px;
         }
@@ -528,9 +525,6 @@
     }
     @media only screen and (max-width: 1000px)
     {
-        .box_ligth_pink {
-            height: 800px;
-        }
         .asesoriamiento_tittle{
             font-size: 34px;
         }
@@ -549,9 +543,6 @@
     }
     @media only screen and (max-width: 995px)
     {
-        .box_ligth_pink {
-            height: 860px;
-        }
         .container_button_precios_text {
             font-size: 9px;
          }
@@ -567,9 +558,6 @@
     }
     @media only screen and (max-width: 990px)
     {
-        .box_ligth_pink {
-            height: 720px;
-        }
         .button_registro {
             font-size: 9px;
         }
@@ -597,9 +585,6 @@
         .asesoriamiento_text {
             font-size:21px;
         }
-        .box_ligth_pink {
-            height: 700px;
-        }
         .button_registro {
             font-size: 8px;
         }
@@ -611,9 +596,6 @@
         }
     }
     @media only screen and (max-width : 950px) {
-        .box_ligth_pink {
-            height: 760px;
-        }
         .container_button_precios_text {
             font-size: 7px;
          }
@@ -663,9 +645,6 @@
         }
         .asesoriamiento_text {
             font-size:18px;
-        }
-        .box_ligth_pink {
-            height: 640px;
         }
         .box_red_large_text {
             font-size: 24px;
@@ -725,9 +704,6 @@
         .asesoriamiento_text {
             font-size:17px;
         }
-        .box_ligth_pink {
-            height: 670px;
-        }
     }
     @media only screen and (max-width : 822px) {
         
@@ -742,9 +718,6 @@
         }
         .asesoriamiento_text {
             font-size:16px;
-        }
-        .box_ligth_pink {
-            height: 620px;
         }
         .comparacion_pulpo_tittle {
             font-size: 25px;
@@ -761,10 +734,6 @@
         .Premios_text {
             font-size: 10px;
         }
-        .box_ligth_pink {
-            height: 620px;
-        }
-        
         .comparacion_pulpo_text {
             font-size: 13px;
         }
@@ -789,7 +758,7 @@
             font-size: 57px;
         }
         .comparacion_item_text {
-            font-size: 11px;
+            font-size: 11px; 
         }
         .img_comparacion {
             width: 250px !important;
@@ -800,9 +769,6 @@
         }
         .asesoriamiento_text {
             font-size:14px;
-        }
-        .box_ligth_pink {
-            height: 510px;
         }
         .costos_comparacion_tittle {
             font-size: 32px; 
@@ -816,18 +782,12 @@
         }
     }
     @media only screen and (max-width : 780px) {
-        .box_ligth_pink {
-            height: 550px;
-        }
         .SWIFFLEAD_tittle {
             font-size: 22px;
         }
         
     }
     @media only screen and (max-width : 760px) {
-        .box_ligth_pink {
-            height: 580px;
-        }
         .box_red_large_text {
             font-size: 24px;
         }
@@ -837,9 +797,6 @@
         
     }
     @media only screen and (max-width : 740px) {
-        .box_ligth_pink {
-            height: 600px;
-        }
         .container_text_beneficios {
             font-size: 16px;
         }
@@ -851,9 +808,6 @@
         }
         .asesoriamiento_text {
             font-size:9px;
-        }
-        .box_ligth_pink {
-            height: 380px;
         }
         .container_p_login {
             padding: 0px 20px;
@@ -883,14 +837,8 @@
         .container_tipo_seguros_tittle {
             font-size: 42px;
         }
-        .box_ligth_pink {
-            height: 380px;
-        }
     }
     @media only screen and (max-width : 650px) {
-        .box_ligth_pink {
-            height: 390px;
-        }
         .SWIFFLEAD_tittle {
             font-size: 18px;
         }
@@ -972,10 +920,6 @@
             height: 480px;
             margin-left: 25px;
             margin-right: 25px;
-        }
-        .box_ligth_pink {
-            height: fit-content;
-            padding-bottom: 10px;
         }
         .asesoriamiento_tittle {
             font-size: 64px;
@@ -1109,6 +1053,7 @@
             left: 20px;
         }
     }
+}
 </style>
 <body>
     <div class="grid">
