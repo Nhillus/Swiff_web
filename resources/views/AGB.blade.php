@@ -63,6 +63,35 @@
         padding-top:10px;
         font-size: 26px;
     }
+    @media only screen and (max-width: 690px){ 
+        .footer_text {
+            font-size: 20px;
+        }
+    }
+    @media only screen and (max-width: 600px)
+    {
+        .clausula_titulo {
+            margin: 50px;
+        }
+        .clausula_titulo_text{
+            font-size: 25px;
+        }
+        .phone_text_tittle {
+            font-size: 16px
+        }
+        .phone_text {
+            font-size: 14px
+        }
+        .impressum {
+            padding: 25px;
+        }
+        
+    }
+    @media only screen and (max-width: 580px){
+        .footer_text {
+            font-size: 16px;
+        }
+    }
 </style>
 <body>
     <div class="grid">
@@ -81,7 +110,7 @@
         </nav>
         <div class="clausula">
             <div class="clausula_titulo">
-                <h3 class="center-align">Allgemeine Geschäftsbedingungen</h3>
+                <h3 class="clausula_titulo_text center-align">Allgemeine Geschäftsbedingungen</h3>
             </div>
             <div class="version">
                 <h5 class="center-align">Version: 1. März 2020</h5>
