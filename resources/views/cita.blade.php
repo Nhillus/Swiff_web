@@ -829,6 +829,7 @@
         .footer_text {
             font-size: 20px;
         }
+    }
 
     @media only screen and (max-width : 672px) {
         .container_tipo_seguros_tittles {

@@ -40,7 +40,7 @@
         background-color: #edf2f5;
     }
     .grid {
-        height: 1750px;
+        height: fit-content;
         margin: 0 auto;
         max-width: 1200px;
         background-color: white;
@@ -168,6 +168,70 @@
     textarea.materialize-textarea{
         height: 200px;
    }
+   @media only screen and (max-width : 865px) {
+        .Paketes_titulos{
+            font-size: 32px;
+        }
+        .caracteristicas_text {
+            font-size: 20px;
+        }
+        
+    }
+    @media only screen and (max-width : 805px) {
+        .caracteristicas_text {
+            font-size: 18px;
+        }
+        .Paketes_titulos{
+            font-size: 24px;
+        }
+        .img_correcto {
+            width: 45px;
+            height: 45px;
+        }
+        .img_incorrecto {
+            width: 45px;
+            height: 45px;
+        }
+    }
+    @media only screen and (max-width: 690px){ 
+        .footer_text {
+            font-size: 20px;
+        }
+    }
+    @media only screen and (max-width : 600px) {
+        .caracteristicas_text {
+            font-size: 16px;
+        }
+        .caracteristicas_parraf {
+            font-size: 10px;
+        }
+        .Paketes_titulos{
+            font-size: 18px;
+        }
+        .center_img {
+            left: 35px;
+        }
+    }
+    @media only screen and (max-width: 580px){
+        .footer_text {
+            font-size: 16px;
+        }
+    }
+    @media only screen and (max-width : 525px) {
+        .caracteristicas_text {
+            font-size: 14px;
+        }
+        .caracteristicas_parraf {
+            font-size: 8px;
+        }
+        
+        .Paketes_titulos{
+            font-size: 16px;
+        }
+        .center_img {
+            left: 17px;
+        }
+    }
 </style>
 <body>
     <div class="grid">
@@ -185,181 +249,181 @@
             </div>
         </nav>
         <div class="row">
-            <div class="col s12 m3 l3">
+            <div class="col s3 m3 l3">
                 <div class="container_paket_white">
 
                 </div>
             </div>
-            <div class="container_paket_blue col s12 m3 l3">
+            <div class="container_paket_blue col s3 m3 l3">
                 <div class="container_text_standart">
-                    <h3>STANDART</h3>
+                    <h3 class="Paketes_titulos" >STANDART</h3>
                 </div>
                 <div class="container_blue_down row">
                     
                 </div>
             </div>
-            <div class="container_paket_blue_ligth col s12 m3 l3">
+            <div class="container_paket_blue_ligth col s3 m3 l3">
                 <div class="container_text_basis">
-                    <h3>BASIS</h3>
+                    <h3 class="Paketes_titulos">BASIS</h3>
                 </div>
                 <div class="container_blue_light_down row">
                     
                 </div>
             </div>
-            <div class="container_paket_red_blood col s12 m3 l3">
+            <div class="container_paket_red_blood col s3 m3 l3">
                 <div class="container_text_premium">
-                    <h3>PREMIUM</h3>
+                    <h3 class="Paketes_titulos">PREMIUM</h3>
                 </div>
                 <div class="container_red_blood row"></div>
             </div>
         </div>
         <div class="row">
-            <div class="col s12 m3 l3">
-                <h5>Region</h5>
-                <p>Können bestimmt werden</p>
+            <div class="col s3 m3 l3">
+                <h5 class="caracteristicas_text">Region</h5>
+                <p class="caracteristicas_parraf" >Können bestimmt werden</p>
             </div>
-            <div class="col s12 m3 l3">
+            <div class="col s3 m3 l3">
                 <img class="center_img img_incorrecto" src="/img/no correcto-icon.png" alt="">
             </div>
-            <div class="col s12 m3 l3">
+            <div class="col s3 m3 l3">
                 <img class="center_img img_correcto" src="/img/correcto-icon.png" alt="">
             </div>
-            <div class="col s12 m3 l3">
+            <div class="col s3 m3 l3">
                 <img class="center_img img_correcto" src="/img/correcto-icon.png" alt="">
             </div>
         </div>
         <div class="row_gris row">
-            <div class="col s12 m3 l3">
-                <h5>Digital</h5>
-                <p>Termin auf eine Telefonische Beratung</p>
+            <div class="col s3 m3 l3">
+                <h5 class="caracteristicas_text" >Digital</h5>
+                <p class="caracteristicas_parraf" >Termin auf eine Telefonische Beratung</p>
             </div>
-            <div class="col s12 m3 l3">
+            <div class="col s3 m3 l3">
                 <img class="center_img img_correcto" src="/img/correcto-icon.png" alt="">
             </div>
-            <div class="col s12 m3 l3">
+            <div class="col s3 m3 l3">
                 <img class="center_img img_correcto" src="/img/correcto-icon.png" alt="">
             </div>
-            <div class="col s12 m3 l3">
+            <div class="col s3 m3 l3">
                 <img class="center_img img_correcto" src="/img/correcto-icon.png" alt="">
             </div>
         </div>
         <div class="row">
-            <div class="col s12 m3 l3">
-                <h5>Absagen</h5>
-                <p>Kunden die Abbsagen bel Teleleads werden ersetzt</p>
+            <div class="col s3 m3 l3">
+                <h5 class="caracteristicas_text">Absagen</h5>
+                <p class="caracteristicas_parraf" >Kunden die Abbsagen bel Teleleads werden ersetzt</p>
             </div>
-            <div class="col s12 m3 l3">
+            <div class="col s3 m3 l3">
                 <img class="center_img img_correcto" src="/img/correcto-icon.png" alt="">
             </div>
-            <div class="col s12 m3 l3">
+            <div class="col s3 m3 l3">
                 <img class="center_img img_correcto" src="/img/correcto-icon.png" alt="">
             </div>
-            <div class="col s12 m3 l3">
+            <div class="col s3 m3 l3">
                 <img class="center_img img_correcto" src="/img/correcto-icon.png" alt="">
             </div>
         </div>
         <div class="row_gris row">
-            <div class="col s12 m3 l3">
-                <h5>Reklamationen</h5>
-                <p>Maximal 10% der gelieferten Termine</p>
+            <div class="col s3 m3 l3">
+                <h5 class="caracteristicas_text" >Reklamationen</h5>
+                <p class="caracteristicas_parraf" >Maximal 10% der gelieferten Termine</p>
             </div>
-            <div class="col s12 m3 l3">
+            <div class="col s3 m3 l3">
                 <img class="center_img img_incorrecto" src="/img/no correcto-icon.png" alt="">
             </div>
-            <div class="col s12 m3 l3">
+            <div class="col s3 m3 l3">
                 <img class="center_img img_incorrecto" src="/img/no correcto-icon.png" alt="">
             </div>
-            <div class="col s12 m3 l3">
+            <div class="col s3 m3 l3">
                 <img class="center_img img_correcto" src="/img/correcto-icon.png" alt="">
             </div>
         </div>
         <div class="row">
-            <div class="col s12 m3 l3">
-                <h5>Checkliste Versicherung</h5>
+            <div class="col s3 m3 l3">
+                <h5 class="caracteristicas_text" >Checkliste Versicherung</h5>
                 <p>.</p>
             </div>
-            <div class="col s12 m3 l3">
+            <div class="col s3 m3 l3">
                 <img class="center_img img_correcto" src="/img/correcto-icon.png" alt="">
             </div>
-            <div class="col s12 m3 l3">
+            <div class="col s3 m3 l3">
                 <img class="center_img img_correcto" src="/img/correcto-icon.png" alt="">
             </div>
-            <div class="col s12 m3 l3">
+            <div class="col s3 m3 l3">
                 <img class="center_img img_correcto" src="/img/correcto-icon.png" alt="">
             </div>
         </div>
         <div class="row_gris row">
-            <div class="col s12 m3 l3">
-                <h5>Versicherungs -Produkt</h5>
-                <p> Kunde hat min. Interesse an 1 Produkten</p>
+            <div class="col s3 m3 l3">
+                <h5 class="caracteristicas_text" >Versicherungs -Produkt</h5>
+                <p class="caracteristicas_parraf"> Kunde hat min. Interesse an 1 Produkten</p>
             </div>
-            <div class="col s12 m3 l3">
+            <div class="col s3 m3 l3">
                 <img class="center_img img_incorrecto" src="/img/no correcto-icon.png" alt="">
             </div>
-            <div class="col s12 m3 l3">
+            <div class="col s3 m3 l3">
                 <img class="center_img img_correcto" src="/img/correcto-icon.png" alt="">
             </div>
-            <div class="col s12 m3 l3">
+            <div class="col s3 m3 l3">
                 <img class="center_img img_correcto" src="/img/correcto-icon.png" alt="">
             </div>
         </div>
         <div class="row">
-            <div class="col s12 m3 l3">
-                <h5>Versicherungs -Produkt</h5>
-                <p> Kunde hat min. Interesse an 2 Produkten</p>
+            <div class="col s3 m3 l3">
+                <h5 class="caracteristicas_text" >Versicherungs -Produkt</h5>
+                <p class="caracteristicas_parraf"> Kunde hat min. Interesse an 2 Produkten</p>
             </div>
-            <div class="col s12 m3 l3">
+            <div class="col s3 m3 l3">
                 <img class="center_img img_incorrecto" src="/img/no correcto-icon.png" alt="">
             </div>
-            <div class="col s12 m3 l3">
+            <div class="col s3 m3 l3">
                 <img class="center_img img_incorrecto" src="/img/no correcto-icon.png" alt="">
             </div>
-            <div class="col s12 m3 l3">
+            <div class="col s3 m3 l3">
                 <img class="center_img img_correcto" src="/img/correcto-icon.png" alt="">
             </div>
         </div>
         <div class="row_gris row">
-            <div class="col s12 m3 l3">
-                <h5>QC Terminbestätigung</h5>
-                <p>Termin wurde von Qualitäskontrolle Telefonisch bestätigt</p>
+            <div class="col s3 m3 l3">
+                <h5 class="caracteristicas_text" >QC Terminbestätigung</h5>
+                <p class="caracteristicas_parraf">Termin wurde von Qualitäskontrolle Telefonisch bestätigt</p>
             </div>
-            <div class="col s12 m3 l3">
+            <div class="col s3 m3 l3">
                 <img class="center_img img_correcto" src="/img/correcto-icon.png" alt="">
             </div>
-            <div class="col s12 m3 l3">
+            <div class="col s3 m3 l3">
                 <img class="center_img img_correcto" src="/img/correcto-icon.png" alt="">
             </div>
-            <div class="col s12 m3 l3">
+            <div class="col s3 m3 l3">
                 <img class="center_img img_correcto" src="/img/correcto-icon.png" alt="">
             </div>
         </div>
         <div class="row">
-            <div class="col s12 m3 l3">
-                <h5>SMS Terminbestätigung</h5>
-                <p>Kunde bekommt eine Terminbestätigung per SMS</p>
+            <div class="col s3 m3 l3">
+                <h5 class="caracteristicas_text" >SMS Terminbestätigung</h5>
+                <p class="caracteristicas_parraf">Kunde bekommt eine Terminbestätigung per SMS</p>
             </div>
-            <div class="col s12 m3 l3">
+            <div class="col s3 m3 l3">
                 <img class="center_img img_correcto" src="/img/correcto-icon.png" alt="">
             </div>
-            <div class="col s12 m3 l3">
+            <div class="col s3 m3 l3">
                 <img class="center_img img_correcto" src="/img/correcto-icon.png" alt="">
             </div>
-            <div class="col s12 m3 l3">
+            <div class="col s3 m3 l3">
                 <img class="center_img img_correcto" src="/img/correcto-icon.png" alt="">
             </div>
         </div>
         <div class="row_gris row">
-            <div class="col s12 m3 l3">
-                <h5>SMS Termin Reminder</h5>
-                <p>Kunde wird 3h vor dem Termin an den Termin erinnert</p>
+            <div class="col s3 m3 l3">
+                <h5 class="caracteristicas_text" >SMS Termin Reminder</h5>
+                <p class="caracteristicas_parraf" >Kunde wird 3h vor dem Termin an den Termin erinnert</p>
             </div>
-            <div class="col s12 m3 l3">
+            <div class="col s3 m3 l3">
                 <img class="center_img img_incorrecto" src="/img/no correcto-icon.png" alt="">
             </div>
-            <div class="col s12 m3 l3">
+            <div class="col s3 m3 l3">
                 <img class="center_img img_incorrecto" src="/img/no correcto-icon.png" alt="">
             </div>
-            <div class="col s12 m3 l3">
+            <div class="col s3 m3 l3">
                 <img class="center_img img_correcto" src="/img/correcto-icon.png" alt="">
             </div>
         </div>
